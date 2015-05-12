@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "std_lib_facilities.h" // stroustrup recommends using this header for early chapters
 
+using namespace std;
 
 
 TEST(while, loop)
@@ -18,7 +19,7 @@ int i = 0;
     
 while (i<100)
 {
-    cout<< i << '\t' << sqrt(i) << '\n'; // changed square() to sqrt() 
+    cout << i << '\t' << sqrt(i) << '\n'; // changed square() to sqrt()
     ++i;
     
     }
