@@ -40,7 +40,7 @@ namespace __gnu_cxx {
 	{
 		size_t operator()(const std::string& s) const
 		{
-			return hash<char*>()(s.c_str());
+			return hash< const char*>()(s.c_str()); // had to add const to avoid an error. see: http://stackoverflow.com/questions/29920374/issue-with-hash-using-clang-llvm3-6-command-line-tools-on-mac-os-x
 		}
 	};
 
